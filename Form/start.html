@@ -37,15 +37,22 @@
       <label for="address">Billing Address</label>
       <input type="text" name="address" required>
       <fieldset>
-        <LEgend>SCEGLI TARIFFA</LEgend>
-        <input type="radio" id="gratis" name="tariffa" value="k">
-        <label for="gratis">GRATUITO</label>
-        <input type="radio" id="tariffa1" name="tariffa" value="c">
-        <label for="gratis">Tariffa1</label>
-        <input type="radio" id="Tariffa2" name="tariffa" value="d">
-        <label for="gratis">Tariffa2</label>
+        <label for="piano_select">Choose a piano:</label>
+
+        <select name="paino1" id="piano_select">
+          <option value="">--Please choose an option--</option>
+          <option value="piano_0">piano gratuito</option>
+          <option value="piano_1">piano 100 eur</option>
+          <option value="piano_2">piano 200 euro</option>
+          <option value="piano_3">piano 300 euro</option>
+        </select>
       </fieldset>
-     
+      <fieldset>
+        <div>
+          <input type="checkbox" id="pro" name="pro">
+          <label for="pro">piano pro</label>
+        </div>
+      </fieldset>
       </div>
     </form>
   </body>
